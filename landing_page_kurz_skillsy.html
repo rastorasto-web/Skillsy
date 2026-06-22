@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurz Skillsy - Montáž vonkajších žalúzií</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        skillsyDark: '#1E293B',    /* Tmavosivý podklad - Slate 800 */
+                        skillsyDarker: '#0F172A',  /* Tmavší podklad - Slate 900 */
+                        skillsyOrange: '#F97316',  /* Výrazná oranžová - Orange 500 */
+                        skillsyOrangeHover: '#EA580C', /* Oranžová pre hover efekty - Orange 600 */
+                        skillsyGray: '#94A3B8'     /* Svetlosivá na text - Slate 400 */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Jemné animácie pre plynulejší dojem */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Hladké rolovanie na celej stránke */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-skillsyDarker text-white font-sans antialiased selection:bg-skillsyOrange selection:text-white">
+
+    <!-- Navigácia / Hlavička -->
+    <nav class="fixed w-full z-50 bg-skillsyDarker/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Miesto pre Logo1 -->
+                <div class="flex-shrink-0 flex items-center bg-white/5 rounded p-2 border border-white/10">
+                    <span class="text-xl font-bold tracking-wider text-skillsyOrange">Logo1</span>
+                    <!-- Tu vložíš obrázok loga neskôr: <img src="cesta-k-logu.png" alt="Skillsy Logo" class="h-10"> -->
+                </div>
+                <!-- Call to Action tlačidlo v menu -->
+                <div>
+                    <a href="#registracia" class="hidden sm:inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-skillsyOrange hover:bg-skillsyOrangeHover transition-colors duration-300 shadow-lg shadow-skillsyOrange/30">
+                        Prihlásiť sa na kurz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Úvodná sekcia (Hero Section) -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Dekoratívne pozadie -->
+        <div class="absolute inset-0 bg-skillsyDarker">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-skillsyOrange/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-skillsyOrange/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <!-- Textová časť -->
+            <div class="lg:w-1/2 lg:pr-12 text-center lg:text-left z-10">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-skillsyOrange/10 border border-skillsyOrange/30 text-skillsyOrange text-xs font-semibold uppercase tracking-wide mb-6 fade-in-up">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Najbližší termín: Pozri nižšie
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 fade-in-up delay-100">
+                    Odborný kurz: <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-skillsyOrange to-yellow-500">
+                        Montáž vonkajších žalúzií
+                    </span>
+                </h1>
+                <p class="text-lg sm:text-xl text-skillsyGray mb-8 max-w-2xl mx-auto lg:mx-0 fade-in-up delay-200">
+                    Získajte praktické zručnosti a teoretické vedomosti od profesionálov. Staňte sa certifikovaným odborníkom na inštaláciu tieniacej techniky.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 fade-in-up delay-300">
+                    <a href="#registracia" class="px-8 py-4 bg-skillsyOrange hover:bg-skillsyOrangeHover text-white rounded-lg font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-xl shadow-skillsyOrange/30 text-center flex items-center justify-center">
+                        Zabezpečiť si miesto
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    <a href="#obsah" class="px-8 py-4 bg-skillsyDark border border-white/10 hover:border-white/30 text-white rounded-lg font-semibold text-lg transition-all duration-300 text-center">
+                        Zistiť viac o obsahu
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Vizuálna časť (Obrázok) -->
+            <div class="lg:w-1/2 mt-16 lg:mt-0 z-10 fade-in-up delay-200 relative">
+                <!-- Nádoba pre obrázok s moderným tieňovaním a zaoblením -->
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+                    <div class="absolute inset-0 bg-skillsyOrange/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Moderné vonkajšie žalúzie na dome" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
+                     <!-- Popisok na obrázku -->
+                     <div class="absolute bottom-4 left-4 z-20 bg-black/60 backdrop-blur-sm text-white px-4 py-2 rounded text-sm font-medium border border-white/10">
+                         Prax priamo na moderných systémoch
+                     </div>
+                </div>
+                <!-- Dekoratívny element -->
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-skillsyOrange rounded-full mix-blend-multiply filter blur-2xl opacity-50 z-0"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sekcia: Pre koho je kurz a Benefity -->
+    <section id="obsah" class="py-20 bg-skillsyDark relative border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Prečo sa zúčastniť tohto kurzu?</h2>
+                <p class="text-skillsyGray max-w-2xl mx-auto">Kurz je koncipovaný na základe reálnych potrieb trhu. Spájame nevyhnutnú teóriu s intenzívnou praxou, aby ste mohli okamžite nastúpiť do procesu.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-skillsyDarker p-8 rounded-xl border border-white/5 hover:border-skillsyOrange/50 transition-colors duration-300 group">
+                    <div class="w-14 h-14 bg-skillsyOrange/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-skillsyOrange group-hover:text-white text-skillsyOrange transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Maximálna prax</h3>
+                    <p class="text-skillsyGray leading-relaxed">Žiadne dlhé sedenie. Zameriavame sa na reálne montážne situácie, s ktorými sa stretnete v teréne. Učíte sa rukami.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-skillsyDarker p-8 rounded-xl border border-white/5 hover:border-skillsyOrange/50 transition-colors duration-300 group">
+                    <div class="w-14 h-14 bg-skillsyOrange/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-skillsyOrange group-hover:text-white text-skillsyOrange transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Odborní lektori</h3>
+                    <p class="text-skillsyGray leading-relaxed">Povedú vás technici s dlhoročnými skúsenosťami, ktorí poznajú všetky úskalia a triky z remesla.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-skillsyDarker p-8 rounded-xl border border-white/5 hover:border-skillsyOrange/50 transition-colors duration-300 group">
+                    <div class="w-14 h-14 bg-skillsyOrange/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-skillsyOrange group-hover:text-white text-skillsyOrange transition-colors">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Istota v podnikaní</h3>
+                    <p class="text-skillsyGray leading-relaxed">Školíme profesionálov. Po absolvovaní budete schopní samostatne a kvalitne vykonávať montáže pre vašich klientov.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcia: Obsah kurzu (Teória a Prax) -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <!-- Teoretická časť -->
+                <div class="lg:w-1/2">
+                    <div class="sticky top-28">
+                        <span class="text-skillsyOrange font-bold tracking-wider uppercase text-sm mb-2 block">Krok 1</span>
+                        <h2 class="text-3xl font-bold mb-6">Teoretická príprava</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-skillsyOrange mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-300">Druhy a typy vonkajších žalúzií na trhu</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-skillsyOrange mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-300">Správne zameranie priestoru pred výrobou</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-skillsyOrange mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-300">Technické požiadavky na stavebnú pripravenosť</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-skillsyOrange mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-gray-300">Základy elektroinštalácie pre motory žalúzií</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Praktická časť -->
+                <div class="lg:w-1/2">
+                    <div class="bg-skillsyDark p-8 rounded-2xl border border-white/10 shadow-xl relative overflow-hidden">
+                        <!-- Jemný oranžový glow efekt na okraji -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-skillsyOrange/20 blur-3xl rounded-full"></div>
+                        
+                        <span class="text-skillsyOrange font-bold tracking-wider uppercase text-sm mb-2 block relative z-10">Krok 2</span>
+                        <h2 class="text-3xl font-bold mb-6 relative z-10">Samotná montáž (Prax)</h2>
+                        
+                        <div class="space-y-6 relative z-10">
+                            <div class="flex">
+                                <div class="flex-shrink-0 mr-4 flex flex-col items-center">
+                                    <div class="w-8 h-8 rounded-full bg-skillsyOrange flex items-center justify-center font-bold text-white">1</div>
+                                    <div class="h-full w-0.5 bg-white/10 my-2"></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">Príprava staveniska</h4>
+                                    <p class="text-skillsyGray text-sm mt-1">Bezpečné rozloženie materiálu a kontrola náradia.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 mr-4 flex flex-col items-center">
+                                    <div class="w-8 h-8 rounded-full bg-skillsyOrange flex items-center justify-center font-bold text-white">2</div>
+                                    <div class="h-full w-0.5 bg-white/10 my-2"></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">Ukotvenie vodiacich líšt a boxu</h4>
+                                    <p class="text-skillsyGray text-sm mt-1">Praktický nácvik rôznych typov kotvenia do fasády.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 mr-4 flex flex-col items-center">
+                                    <div class="w-8 h-8 rounded-full bg-skillsyOrange flex items-center justify-center font-bold text-white">3</div>
+                                    <div class="h-full w-0.5 bg-white/10 my-2"></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">Inštalácia lamiel a zapojenie</h4>
+                                    <p class="text-skillsyGray text-sm mt-1">Kompletizácia žalúzie, nastavenie koncových polôh motora.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0 mr-4">
+                                    <div class="w-8 h-8 rounded-full bg-skillsyOrange flex items-center justify-center font-bold text-white">4</div>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">Odovzdanie klientovi</h4>
+                                    <p class="text-skillsyGray text-sm mt-1">Skúška funkčnosti a komunikácia s koncovým zákazníkom.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rezervačný formulár (Konverzná zóna) -->
+    <section id="registracia" class="py-20 bg-skillsyDark border-t border-white/5 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-skillsyDarker p-8 sm:p-12 rounded-3xl border border-skillsyOrange/20 shadow-2xl">
+                
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-extrabold mb-4">Zabezpečte si svoje miesto</h2>
+                    <p class="text-skillsyGray">Kapacita kurzu je obmedzená pre zabezpečenie individuálneho prístupu ku každému účastníkovi.</p>
+                </div>
+
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Meno -->
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-300 mb-2">Meno</label>
+                            <input type="text" name="first-name" id="first-name" class="w-full bg-skillsyDark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-skillsyOrange focus:border-transparent transition-shadow" placeholder="Jozef" required>
+                        </div>
+                        <!-- Priezvisko -->
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-300 mb-2">Priezvisko</label>
+                            <input type="text" name="last-name" id="last-name" class="w-full bg-skillsyDark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-skillsyOrange focus:border-transparent transition-shadow" placeholder="Mrkvička" required>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">E-mailová adresa</label>
+                            <input type="email" name="email" id="email" class="w-full bg-skillsyDark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-skillsyOrange focus:border-transparent transition-shadow" placeholder="jozef@firma.sk" required>
+                        </div>
+                        <!-- Telefón -->
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Telefónne číslo</label>
+                            <input type="tel" name="phone" id="phone" class="w-full bg-skillsyDark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-skillsyOrange focus:border-transparent transition-shadow" placeholder="+421 900 000 000">
+                        </div>
+                    </div>
+
+                    <!-- Výber termínu -->
+                    <div>
+                        <label for="termin" class="block text-sm font-medium text-gray-300 mb-2">Preferovaný termín</label>
+                        <select id="termin" name="termin" class="w-full bg-skillsyDark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-skillsyOrange focus:border-transparent transition-shadow appearance-none">
+                            <option value="" disabled selected>Vyberte si z dostupných termínov...</option>
+                            <option value="jul">Júl 2026 (Dunajská Streda)</option>
+                            <option value="august">August 2026 (Dunajská Streda)</option>
+                            <option value="dohoda">Zatiaľ neviem, prosím kontaktujte ma</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Poznámka -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Poznámka / Správa (nepovinné)</label>
+                        <textarea id="message" name="message" rows="3" class="w-full bg-skillsyDark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-skillsyOrange focus:border-transparent transition-shadow" placeholder="Máte špecifické otázky ku kurzu?"></textarea>
+                    </div>
+
+                    <!-- Súhlas -->
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="gdpr" name="gdpr" type="checkbox" class="w-4 h-4 bg-skillsyDark border border-white/20 rounded focus:ring-skillsyOrange accent-skillsyOrange" required>
+                        </div>
+                        <div class="ml-3 text-sm">
+                            <label for="gdpr" class="font-medium text-gray-400">Súhlasím so spracovaním <a href="#" class="text-skillsyOrange hover:underline">osobných údajov</a> a oboznámil som sa so všeobecnými podmienkami.</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" class="w-full flex justify-center py-4 px-4 border border-transparent rounded-lg shadow-lg shadow-skillsyOrange/20 text-lg font-bold text-white bg-skillsyOrange hover:bg-skillsyOrangeHover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-skillsyDark focus:ring-skillsyOrange transition-all duration-300 transform hover:scale-[1.02]">
+                            Záväzne sa prihlásiť
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pätička -->
+    <footer class="bg-skillsyDarker py-8 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-skillsyGray text-sm">
+                &copy; 2026 Skillsy.sk - Vzdelávacie a tvorivé centrum. Všetky práva vyhradené.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
