@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillsy | AI Rekvalifikačné Kurzy cez Úrad Práce</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #10B981 0%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.08), transparent 45%),
+                        radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.05), transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen antialiased hero-gradient">
+
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-r from-emerald-500 to-blue-500 p-2.5 rounded-xl shadow-lg shadow-emerald-500/20">
+                    <i class="fa-solid fa-brain text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white">skillsy</span>
+                    <span class="text-xs block text-emerald-400 font-semibold tracking-wider uppercase">Future Skills Academy</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#ako-to-funguje" class="text-sm text-slate-300 hover:text-white transition">Ako to funguje?</a>
+                <a href="#ponuka-kurzov" class="text-sm text-slate-300 hover:text-white transition">Naše kurzy</a>
+                <a href="#harmonogram" class="text-sm text-slate-300 hover:text-white transition">Učebný plán</a>
+                <a href="#lektorska-zona" class="text-sm text-slate-300 hover:text-emerald-400 transition font-semibold"><i class="fa-solid fa-lock-open mr-1"></i> Pre lektora</a>
+                <a href="#faq" class="text-sm text-slate-300 hover:text-white transition">Časté otázky</a>
+            </div>
+
+            <div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    100% Preplatené Úradom Práce
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-12 pb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold">
+                        <i class="fa-solid fa-file-invoice-dollar"></i> Národný projekt: Zručnosti pre trh práce
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white">
+                        Získajte žiadané <br>
+                        <span class="gradient-text">AI zručnosti</span> úplne <br>
+                        <span class="underline decoration-emerald-500 decoration-4 underline-offset-8">bezplatne</span>.
+                    </h1>
+                    
+                    <p class="text-lg text-slate-300 max-w-xl leading-relaxed">
+                        Ste nezamestnaný alebo si hľadáte novú prácu? Úrad práce vám teraz preplatí 100% ceny kurzu umelej inteligencie (AI) v hodnote <strong>980 €</strong>. Pomôžeme vám s celou byrokraciou, aby ste sa mohli sústrediť len na svoj rast.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#ziadost-form" class="inline-flex items-center justify-center px-6 py-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl transition shadow-lg shadow-emerald-500/20 text-center">
+                            Chcem nezáväznú konzultáciu a podklady
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#ako-to-funguje" class="inline-flex items-center justify-center px-6 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl transition border border-slate-700 text-center">
+                            Ako postupovať? (Návod)
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800 max-w-lg">
+                        <div class="text-center sm:text-left">
+                            <div class="text-2xl font-bold text-white">0 €</div>
+                            <div class="text-xs text-slate-400">Doplatok z vašej strany</div>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <div class="text-2xl font-bold text-white">4 Dni</div>
+                            <div class="text-xs text-slate-400">Intenzívny praktický kurz</div>
+                        </div>
+                        <div class="text-center sm:text-left">
+                            <div class="text-2xl font-bold text-white">Až 94%</div>
+                            <div class="text-xs text-slate-400">Úspešnosť schválenia úradmi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl shadow-2xl relative overflow-hidden backdrop-blur-sm">
+                        <div class="absolute -right-12 -top-12 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl"></div>
+                        
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-emerald-400"></i>
+                            Kalkulačka oprávnenosti príspevku
+                        </h3>
+
+                        <div class="space-y-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Váš aktuálny status:</label>
+                                <select id="statusSelect" onchange="calculateEligibility()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition">
+                                    <option value="uoz">UoZ (Evidovaný nezamestnaný na Úrade práce)</option>
+                                    <option value="zoz">ZoZ (Zamestnaný, ale hľadám si lepšiu prácu)</option>
+                                    <option value="ine">Iné / Samoplatca</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Máte vybraný kurz?</label>
+                                <select id="courseSelect" onchange="calculateEligibility()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 transition">
+                                    <option value="admin">AI Asistent: Efektívna administratíva a Excel v praxi (24h)</option>
+                                    <option value="marketing">AI Tvorba: Rýchle prezentácie (Gamma) a krátke videá (FlexClip) (24h)</option>
+                                </select>
+                            </div>
+
+                            <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-850 space-y-3">
+                                <div class="flex justify-between items-center text-sm">
+                                    <span class="text-slate-400">Bežná hodnota kurzu:</span>
+                                    <span class="font-semibold text-slate-300 line-through">980 €</span>
+                                </div>
+                                <div class="flex justify-between items-center text-sm">
+                                    <span class="text-slate-400">Preplatenie Úradom práce (100%):</span>
+                                    <span class="font-semibold text-emerald-400" id="reimbursementText">- 980 €</span>
+                                </div>
+                                <div class="border-t border-slate-800 pt-3 flex justify-between items-center">
+                                    <span class="font-bold text-white text-base">Finálna cena pre vás:</span>
+                                    <span class="font-extrabold text-2xl text-emerald-400" id="finalPrice">0 €</span>
+                                </div>
+                            </div>
+
+                            <div id="eligibilityBadge" class="p-3 bg-emerald-500/10 border border-emerald-500/25 rounded-lg text-xs text-emerald-400 text-center font-medium">
+                                <i class="fa-solid fa-circle-check mr-1.5"></i> Spĺňate podmienky projektu "Zručnosti pre trh práce"!
+                            </div>
+
+                            <button onclick="scrollToForm()" class="w-full py-3.5 bg-gradient-to-r from-emerald-500 to-blue-600 hover:from-emerald-400 hover:to-blue-500 text-slate-950 font-bold rounded-xl transition shadow-lg text-center">
+                                Získať podklady pre Úrad Práce
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="ako-to-funguje" class="py-20 bg-slate-900 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                    Žiadna zložitá byrokracia. <br>
+                    <span class="gradient-text">Vybavíte to v 4 jednoduchých krokoch</span>
+                </h2>
+                <p class="text-slate-400 mt-4">
+                    Väčšinu dokumentov pripravíme kompletne za vás. Vy iba odovzdáte hotovú žiadosť na svojom úrade práce.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="bg-slate-800/30 border border-slate-800 p-6 rounded-2xl relative hover:border-slate-700 transition">
+                    <div class="absolute -top-5 left-6 bg-slate-800 border border-slate-700 w-10 h-10 rounded-xl flex items-center justify-center font-black text-emerald-400 text-lg shadow-md">1</div>
+                    <div class="pt-4 space-y-3">
+                        <h4 class="font-bold text-lg text-white">Výber kurzu</h4>
+                        <p class="text-sm text-slate-400">Vyberiete si z našich akreditovaných programov zameraných na kancelársku prácu a AI nástroje.</p>
+                        <span class="text-xs text-emerald-500 font-semibold"><i class="fa-solid fa-clock"></i> Trvá: 5 minút</span>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-800/30 border border-slate-800 p-6 rounded-2xl relative hover:border-slate-700 transition">
+                    <div class="absolute -top-5 left-6 bg-slate-800 border border-slate-700 w-10 h-10 rounded-xl flex items-center justify-center font-black text-emerald-400 text-lg shadow-md">2</div>
+                    <div class="pt-4 space-y-3">
+                        <h4 class="font-bold text-lg text-white">Podklady od nás</h4>
+                        <p class="text-sm text-slate-400">Vyplníte nezáväzný formulár. My vám pripravíme podrobný harmonogram, popis a potvrdíme časť B pre Úrad práce.</p>
+                        <span class="text-xs text-blue-400 font-semibold"><i class="fa-solid fa-bolt"></i> Vyriešime do 24 hodín</span>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-800/30 border border-slate-800 p-6 rounded-2xl relative hover:border-slate-700 transition">
+                    <div class="absolute -top-5 left-6 bg-slate-800 border border-slate-700 w-10 h-10 rounded-xl flex items-center justify-center font-black text-emerald-400 text-lg shadow-md">3</div>
+                    <div class="pt-4 space-y-3">
+                        <h4 class="font-bold text-lg text-white">Odovzdanie žiadosti</h4>
+                        <p class="text-sm text-slate-400">Kompletnú žiadosť odnesiete na svoj Úrad práce najneskôr 14 až 21 dní pred plánovaným začiatkom kurzu.</p>
+                        <span class="text-xs text-amber-500 font-semibold"><i class="fa-solid fa-triangle-exclamation"></i> Sledujte termíny</span>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-slate-800/30 border border-slate-800 p-6 rounded-2xl relative hover:border-slate-700 transition">
+                    <div class="absolute -top-5 left-6 bg-slate-800 border border-slate-700 w-10 h-10 rounded-xl flex items-center justify-center font-black text-emerald-400 text-lg shadow-md">4</div>
+                    <div class="pt-4 space-y-3">
+                        <h4 class="font-bold text-lg text-white">Absolvovanie</h4>
+                        <p class="text-sm text-slate-400">Po schválení úradom absolvujete kurz. Úrad následne preplatí plnú hodnotu 980 € priamo nám. Vy nedoplácate nič.</p>
+                        <span class="text-xs text-emerald-500 font-semibold"><i class="fa-solid fa-circle-check"></i> 100% Bez rizika</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ponuka-kurzov" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Schválené AI Rekvalifikačné Programy</h2>
+                    <p class="text-slate-400 mt-2 max-w-xl">
+                        Tieto kurzy sú metodicky zostavené tak, aby ich úradníci bez problémov schválili. Sú zamerané na okamžité uplatnenie v administratíve, obchode či marketingu.
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0 flex gap-2 flex-wrap">
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-xs text-slate-300 flex items-center gap-1.5 font-medium">
+                        <i class="fa-solid fa-check text-emerald-500"></i> Max 6h / denne
+                    </span>
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-xs text-slate-300 flex items-center gap-1.5 font-medium">
+                        <i class="fa-solid fa-check text-emerald-500"></i> Certifikát o rekvalifikácii
+                    </span>
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-xs text-slate-300 flex items-center gap-1.5 font-medium">
+                        <i class="fa-solid fa-check text-emerald-500"></i> Hodnota 980 €
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-emerald-500/30 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-6">
+                            <div class="bg-emerald-500/10 text-emerald-400 p-3 rounded-xl border border-emerald-500/20 text-2xl">
+                                <i class="fa-solid fa-file-excel"></i>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Excel, LLM moduly & Kancelária</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">AI Asistent: Efektívna administratíva a Excel v praxi</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Osvojte si základy umelej inteligencie a porovnajte hlavné LLM modely ako <strong>ChatGPT, Gemini, Claude a Copilot</strong>. Naučte sa ich ovládať ľudskou rečou a prepojiť ich s kancelárskou prácou. Špeciálny dôraz kladieme na <strong>Microsoft Excel</strong> – s podporou AI budete tvoriť zložité tabuľky, automatizovať reporty a analyzovať dáta bez nutnosti učiť sa komplikované vzorce naspamäť.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i class="fa-solid fa-calendar text-emerald-400 w-5"></i>
+                                <span>Trvanie: <strong>4 dni</strong> (celkovo 24 vyučovacích hodín)</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i class="fa-solid fa-clock text-emerald-400 w-5"></i>
+                                <span>Intenzita: <strong>6 hodín denne</strong> (09:00 - 15:00 s prestávkami)</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i class="fa-solid fa-graduation-cap text-emerald-400 w-5"></i>
+                                <span>Zameranie: ChatGPT, Gemini, Claude, Copilot a pokročilý Excel</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Cez Úrad Práce (100% preplatené)</span>
+                            <span class="text-2xl font-black text-white">0 € <span class="text-xs text-emerald-500 font-normal"> (plná cena 980 €)</span></span>
+                        </div>
+                        <button onclick="selectCourseAndScroll('admin')" class="w-full sm:w-auto px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl transition text-center text-sm">
+                            Mám záujem o tento kurz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500/30 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-6">
+                            <div class="bg-blue-500/10 text-blue-400 p-3 rounded-xl border border-blue-500/20 text-2xl">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">Prezentácie & Marketingové Video</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">AI Tvorba: Rýchle prezentácie (Gamma) a krátke videá (FlexClip)</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Osvojte si modernú digitálnu tvorbu pre marketing a sociálne siete. Naučíte sa bleskovo vytvárať vizuálne podmanivé firemné prezentácie v nástroji <strong>Gamma App</strong> a tvoriť pútavé produktové videá, promovideá a produkt-as-a-service videá pre sociálne siete vo <strong>FlexClip</strong>. Ideálne pre administratívu, obchod, sociálne siete a moderný marketing.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i class="fa-solid fa-calendar text-blue-400 w-5"></i>
+                                <span>Trvanie: <strong>4 dni</strong> (celkovo 24 vyučovacích hodín)</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i class="fa-solid fa-clock text-blue-400 w-5"></i>
+                                <span>Intenzita: <strong>6 hodín denne</strong> (09:00 - 15:00 s prestávkami)</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i class="fa-solid fa-graduation-cap text-blue-400 w-5"></i>
+                                <span>Zameranie: Gamma App, FlexClip (promo, produktové a marketingové videá)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Cez Úrad Práce (100% preplatené)</span>
+                            <span class="text-2xl font-black text-white">0 € <span class="text-xs text-blue-400 font-normal"> (plná cena 980 €)</span></span>
+                        </div>
+                        <button onclick="selectCourseAndScroll('marketing')" class="w-full sm:w-auto px-6 py-3 bg-blue-500 hover:bg-blue-400 text-white font-bold rounded-xl transition text-center text-sm">
+                            Mám záujem o tento kurz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="harmonogram" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 uppercase tracking-wider">Metodické podklady pre ÚPSVaR</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Učebný plán & Denný harmonogram</h2>
+                <p class="text-slate-400 mt-2">
+                    Oficiálna hodinová štruktúra kurzov spĺňajúca normatívny rámec Úradu práce. Každý deň pozostáva presne zo 6 vyučovacích hodín (vyučovacia hodina = 45 minút) a dvoch prestávok.
+                </p>
+                
+                <!-- Toggle between courses -->
+                <div class="flex justify-center mt-8 p-1.5 bg-slate-950 rounded-xl inline-flex border border-slate-800">
+                    <button onclick="switchSyllabus('admin')" id="tabBtnAdmin" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-emerald-500 text-slate-950">
+                        AI Asistent & Excel (24h)
+                    </button>
+                    <button onclick="switchSyllabus('marketing')" id="tabBtnMarketing" class="px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition">
+                        AI Tvorba Gamma & FlexClip (24h)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Syllabus Container -->
+            <div class="bg-slate-850/50 border border-slate-800 rounded-3xl p-6 sm:p-10 backdrop-blur-sm">
+                
+                <!-- Day breakdown cards for Administrative / Excel Course -->
+                <div id="syllabusAdmin" class="space-y-8">
+                    <div class="border-b border-slate-800 pb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                AI Asistent: Efektívna administratíva a Excel v praxi
+                            </h3>
+                            <p class="text-slate-400 text-xs mt-1">Celkový rozsah: 24 vyučovacích hodín | 4 dni výučby | Max. 6 hodín za deň</p>
+                        </div>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full font-semibold">Cena: 980 € (Suma preplácaná úradom)</span>
+                    </div>
+
+                    <!-- Daily breakdown grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                        <!-- Day 1 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">1. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-slate-800 px-2 py-0.5 rounded text-slate-400">Základy & LLM</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Úvod do AI a porovnanie LLM nástrojov</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Predstavenie LLM nástrojov ako takých, porovnanie rozdielov a výstupov medzi ChatGPT, Gemini, Claude a Copilot.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-slate-400">Úvod do AI a porovnanie modelov</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Pravidlá bezpečného promptovania</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:15</span> <span class="text-slate-400">Formáty výstupov a úprava tónu</span></div>
+                                <div class="flex justify-between gap-2"><span>14:15 - 15:00</span> <span class="text-emerald-400 font-medium">Praktické cvičenia, simulácia</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Day 2 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">2. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-slate-800 px-2 py-0.5 rounded text-slate-400">Korešpondencia</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Písanie dokumentov a e-mailov pomocou AI</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Využitie AI na bleskovú odpoveď na e-maily, sťažnosti, prípravu zmlúv, zápisníc zo stretnutí a prekladov do cudzích jazykov.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-slate-400">Tvorba obchodných e-mailov a šablón</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Formálna a neformálna štylizácia textu</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:15</span> <span class="text-slate-400">Preklady a úprava externých textov</span></div>
+                                <div class="flex justify-between gap-2"><span>14:15 - 15:00</span> <span class="text-emerald-400 font-medium">Workshop: Kancelárske simulácie</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Day 3 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4 border-emerald-500/30">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">3. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded">Excel & Copilot</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Spracovanie tabuliek, vzorcov a dát v Exceli cez AI</h4>
+                            <p class="text-xs text-emerald-300 leading-relaxed font-medium">
+                                Kľúčový deň: Písanie zložitých Excel vzorcov (VLOOKUP, IF) pomocou AI, automatická tvorba tabuliek, grafov a rýchle filtrovanie dát.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-slate-400">Základy Excelu a prepojenie s AI</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Tvorba vzorcov a makier pomocou AI</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:15</span> <span class="text-slate-400">Analýza a vizualizácia (ChatGPT Data)</span></div>
+                                <div class="flex justify-between gap-2"><span>14:15 - 15:00</span> <span class="text-emerald-400 font-medium">Praktický projekt: Report pre vedenie</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Day 4 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">4. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-slate-800 px-2 py-0.5 rounded text-emerald-400 font-semibold">Ovládanie & CV</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Princípy ovládania modelov a uplatnenie</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Princípy pokročilého ovládania AI modelov, vypracovanie perfektného životopisu a príprava na trh práce.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-emerald-400 font-semibold">Tvorba životopisu na konkrétnu pozíciu</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Princípy a možnosti ovládania modelov</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:50</span> <span class="text-slate-400">Záverečná prezentácia a spätná väzba</span></div>
+                                <div class="flex justify-between gap-2"><span>14:50 - 15:00</span> <span class="text-emerald-400 font-semibold">Odovzdanie certifikátov (10 min)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day breakdown cards for Presentation & Video Course (Gamma & Flexclip) -->
+                <div id="syllabusMarketing" class="space-y-8 hidden">
+                    <div class="border-b border-slate-800 pb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+                                AI Tvorba: Rýchle prezentácie (Gamma) a krátke videá (FlexClip)
+                            </h3>
+                            <p class="text-slate-400 text-xs mt-1">Celkový rozsah: 24 vyučovacích hodín | 4 dni výučby | Max. 6 hodín za deň</p>
+                        </div>
+                        <span class="text-xs bg-blue-500/10 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-full font-semibold">Cena: 980 € (Suma preplácaná úradom)</span>
+                    </div>
+
+                    <!-- Daily breakdown grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                        <!-- Day 1 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">1. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-slate-800 px-2 py-0.5 rounded text-slate-400">AI Copywriting</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Plánovanie obsahu a textové scenáre s AI</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Ako využiť ChatGPT a Claude na tvorbu nápadov, scenárov pre videá a textov pre sociálne siete či firemné brožúry.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-slate-400">Analýza publika a tón hlasu značky</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Písanie scenárov pre krátke videá</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:15</span> <span class="text-slate-400">Tvorba plánu obsahu na mesiac vopred</span></div>
+                                <div class="flex justify-between gap-2"><span>14:15 - 15:00</span> <span class="text-blue-400 font-medium">Praktická tvorba textových podkladov</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Day 2 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4 border-blue-500/30">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">2. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded">Gamma App</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Okamžité firemné prezentácie s Gamma App</h4>
+                            <p class="text-xs text-blue-300 leading-relaxed font-medium">
+                                Ako z jedného riadku textu vytvoriť za 30 sekúnd kompletnú, vizuálne atraktívnu prezentáciu, webstránku alebo dokument priamo v Gamma App.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-slate-400">Zoznámenie sa s Gamma a registráciou</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Generovanie prezentácií z textových podkladov</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:15</span> <span class="text-slate-400">Úprava dizajnu, šablón a štruktúry v Gamma</span></div>
+                                <div class="flex justify-between gap-2"><span>14:15 - 15:00</span> <span class="text-blue-400 font-medium">Workshop: Tvorba prezentácie na pohovor</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Day 3 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4 border-blue-500/30">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">3. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded">FlexClip AI</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Tvorba promo a produktových videí vo FlexClip</h4>
+                            <p class="text-xs text-blue-300 leading-relaxed font-medium">
+                                Tvorba promovideí, produktových videí a videí predstavujúcich služby pre sociálne siete. Rýchly strih, titulky a hudba.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-slate-400">Predstavenie FlexClip, dovoz materiálov</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Tvorba promo a produktových videí</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:15</span> <span class="text-slate-400">AI titulky, hudba a prechody v praxi</span></div>
+                                <div class="flex justify-between gap-2"><span>14:15 - 15:00</span> <span class="text-blue-400 font-medium">Strih videa pre sociálne siete (Reels/TikTok)</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Day 4 -->
+                        <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4">
+                            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                                <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">4. Deň (6 hodín)</span>
+                                <span class="text-[10px] bg-slate-800 px-2 py-0.5 rounded text-blue-400 font-semibold">Portfólio</span>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Zostavenie vlastného portfólia a prezentácia</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Zostavenie praktických ukážok vašej marketingovej práce pre potenciálneho zamestnávateľa.
+                            </p>
+                            <div class="space-y-2 pt-2 border-t border-slate-800 text-[11px] text-slate-300">
+                                <div class="flex justify-between gap-2"><span>09:00 - 10:30</span> <span class="text-blue-400 font-semibold">Tvorba portfólia v prostredí Gamma</span></div>
+                                <div class="flex justify-between gap-2"><span>10:45 - 12:15</span> <span class="text-slate-400">Príprava záverečnej práce pre Úrad práce</span></div>
+                                <div class="flex justify-between gap-2"><span>12:45 - 14:50</span> <span class="text-slate-400">Záverečná prezentácia vytvoreného obsahu</span></div>
+                                <div class="flex justify-between gap-2"><span>14:50 - 15:00</span> <span class="text-blue-400 font-semibold">Odovzdanie certifikátov (10 min)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info banner for ÚPSVaR -->
+                <div class="mt-8 p-4 bg-slate-900 rounded-xl border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-circle-info text-emerald-400 text-xl"></i>
+                        <span class="text-xs text-slate-300 max-w-2xl leading-relaxed">
+                            <strong>Dôležité informácie pre podanie žiadosti:</strong> Úrad práce prepláca 100% ceny kurzu (980 €) uchádzačom o zamestnanie bez akýchkoľvek doplatkov. Pre úspešné schválenie doložte tento kompletný 4-dňový rozvrh so 24 vyučovacími hodinami.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="ziadost-form" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+                <div class="absolute -left-16 -bottom-16 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl"></div>
+                
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h3 class="text-3xl font-extrabold text-white">Požiadajte o preplatenie kurzu v hodnote 980 €</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        Vyplňte tieto základné informácie. My vám do 24 hodín e-mailom pošleme predvyplnené formuláre, ktoré len vytlačíte a zanesiete na svoj Úrad práce.
+                    </p>
+                </div>
+
+                <form id="leadForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Meno a priezvisko *</label>
+                            <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition" placeholder="Napr. Ján Kováč">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">E-mailová adresa *</label>
+                            <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition" placeholder="jan.kovac@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Telefónne číslo *</label>
+                            <input type="tel" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition" placeholder="Napr. +421 905 123 456">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Váš Úrad Práce (mesto) *</label>
+                            <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition" placeholder="Napr. Žilina">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Zvoľte si kurz *</label>
+                        <select id="formCourse" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition">
+                            <option value="admin">AI Asistent: Efektívna administratíva a Excel v praxi (24h) - 0 € (hodnota 980 €)</option>
+                            <option value="marketing">AI Tvorba: Rýchle prezentácie (Gamma) a krátke videá (FlexClip) (24h) - 0 € (hodnota 980 €)</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" required id="gdpr" class="mt-1 accent-emerald-500">
+                        <label for="gdpr" class="text-xs text-slate-400 leading-relaxed">
+                            Súhlasím so spracovaním osobných údajov spoločnosťou Skillsy za účelom vypracovania podkladov pre ÚPSVaR a kontaktovania ohľadom kurzu. *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-slate-950 font-bold rounded-xl transition shadow-lg shadow-emerald-500/15 text-center text-base">
+                        Odoslať žiadost o vypracovanie podkladov (ZADARMO)
+                    </button>
+                    
+                    <p class="text-[11px] text-center text-slate-500">
+                        <i class="fa-solid fa-lock"></i> Vaše dáta sú u nás v úplnom bezpečí. Odoslaním nevzniká žiadny finančný záväzok.
+                    </p>
+                </form>
+
+                <!-- Success State Overlay -->
+                <div id="successOverlay" class="hidden absolute inset-0 bg-slate-900/95 flex flex-col items-center justify-center p-8 text-center z-20">
+                    <div class="w-20 h-20 bg-emerald-500/10 text-emerald-400 rounded-full flex items-center justify-center text-4xl mb-6 border border-emerald-500/20">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-2">Žiadosť bola úspešne spracovaná!</h4>
+                    <p class="text-slate-300 text-sm max-w-md leading-relaxed">
+                        Ďakujeme. Na váš e-mail sme práve odoslali potvrdenie. Naši špecialisti na Úrad Práce vás budú telefonicky kontaktovať v najbližších hodinách, aby prešli detaily a vygenerovali potrebné formuláre.
+                    </p>
+                    <button onclick="resetForm()" class="mt-8 px-6 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold rounded-lg transition">
+                        Návrat späť
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LECTURER ZONE (Password-protected, password: 0000) -->
+    <section id="lektorska-zona" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl relative">
+                
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold mb-4">
+                        <i class="fa-solid fa-lock"></i> Chránená sekcia pre lektorov
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-white">Lektorská zóna & Podrobné osnovy</h3>
+                    <p class="text-slate-400 text-sm mt-2">
+                        Ak ste školiteľ, zadajte heslo pre zobrazenie detailnej metodickej štruktúry a plánu výučby pre oba kurzy.
+                    </p>
+                </div>
+
+                <!-- Password Input Area -->
+                <div id="lecturerLogin" class="max-w-md mx-auto text-center space-y-4">
+                    <div class="flex gap-2 justify-center">
+                        <input type="password" id="lecturerPassword" placeholder="Zadajte heslo (skúste 0000)" class="bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-center tracking-widest focus:outline-none focus:border-emerald-500 transition w-64">
+                        <button onclick="verifyPassword()" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl transition">
+                            Odomknúť
+                        </button>
+                    </div>
+                    <p id="wrongPassMsg" class="text-xs text-red-500 hidden font-medium">Nesprávne heslo. Skúste to znova.</p>
+                </div>
+
+                <!-- Hidden Content for Lecturer -->
+                <div id="lecturerContent" class="hidden space-y-12 pt-6 border-t border-slate-800">
+                    
+                    <div class="p-4 bg-emerald-500/10 border border-emerald-500/25 rounded-xl text-emerald-400 text-xs flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-base"></i>
+                        <span><strong>Prístup schválený!</strong> Tu nájdete kompletnú prípravu, metodické pokyny a presnú štruktúru pre vedenie školení.</span>
+                    </div>
+
+                    <!-- Course 1 Metodika -->
+                    <div class="space-y-6">
+                        <h4 class="text-xl font-extrabold text-emerald-400 border-b border-slate-800 pb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-brain"></i>
+                            Kniha lektora: AI Asistent, LLM moduly a Excel v praxi (24h)
+                        </h4>
+
+                        <div class="space-y-4 text-sm text-slate-300">
+                            <!-- Day 1 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>1. DEŇ: Úvod do LLM, porovnanie a základy ovládania</span>
+                                    <span class="text-emerald-400 text-xs">Rozsah: 6 hodín</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (Úvod do LLM a porovnanie):</strong> Predstavenie princípov veľkých jazykových modelov (LLM). Ukážka a porovnanie <strong>ChatGPT, Gemini, Claude a Copilot</strong>. Rozdiely v ich architektúre, limitoch, silných stránkach a porovnanie ich reálnych textových výstupov na rovnaké zadanie.</li>
+                                    <li><strong>10:45 - 12:15 (Pravidlá bezpečného promptovania):</strong> Čo je prompt, ako prebieha komunikácia s AI. Ako správne zadávať kontext, úlohu a formát. Bezpečnosť dát: Čo nikdy nezadávať do bezplatných verzií modelov.</li>
+                                    <li><strong>12:45 - 14:15 (Formáty výstupov):</strong> Štylizácia odpovede. Úprava tónu (formálny, kreatívny, stručný). Tvorba tabuliek, zoznamov a štruktúrovaných reportov priamo v chatovacom rozhraní.</li>
+                                    <li><strong>14:15 - 15:00 (Praktický workshop):</strong> Samostatná práca žiakov. Každý žiak otestuje rovnaký prompt vo všetkých 4 nástrojoch (ChatGPT, Gemini, Claude, Copilot) a spoločne zanalyzujeme rozdiely.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Day 2 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>2. DEŇ: Kancelárska a obchodná korešpondencia s AI</span>
+                                    <span class="text-emerald-400 text-xs">Rozsah: 6 hodín</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (E-maily a šablóny):</strong> Automatizácia komunikácie so zákazníkmi. Tvorba odpovedí na sťažnosti, príprava uvítacích e-mailov a šablón pre bežné otázky s využitím ChatGPT a Copilot.</li>
+                                    <li><strong>10:45 - 12:15 (Formálna štylizácia):</strong> Preformulovanie strohých poznámok do reprezentatívneho firemného jazyka. Korektúra gramatiky a úprava textu na profesionálnu úroveň.</li>
+                                    <li><strong>12:45 - 14:15 (Preklady a spracovanie zmlúv):</strong> Ako bezpečne využiť AI ako bleskového prekladateľa do cudzích jazykov so zachovaním kontextu. Sumarizácia dlhých textov a extrakcia kľúčových bodov zo zmluvy.</li>
+                                    <li><strong>14:15 - 15:00 (Workshop):</strong> Praktická simulácia. Žiaci dostanú za úlohu odpovedať na 3 nahnevané e-maily klientov s pomocou vybraného LLM modelu do 15 minút.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Day 3 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>3. DEŇ: Excel pod kontrolou AI (Analýzy a vzorce)</span>
+                                    <span class="text-emerald-500 text-xs font-semibold">Kľúčový blok kurzu</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (Prepojenie Excelu a AI):</strong> Ako formulovať otázky ohľadom Excelu v prirodzenej reči. Copilot ako asistent priamo v MS Excel prostredí.</li>
+                                    <li><strong>10:45 - 12:15 (Tvorba vzorcov a makier):</strong> Žiadanie AI o vygenerovanie komplexných vzorcov (VLOOKUP, INDEX/MATCH, vnorené IF podmienky). Riešenie chýb v tabuľkách pomocou skopírovania chybovej hlášky do ChatGPT/Claude.</li>
+                                    <li><strong>12:45 - 14:15 (Analýza a vizualizácia):</strong> Nahrávanie .xlsx súborov do ChatGPT (Data Analysis) a tvorba okamžitých grafov, filtrov a manažérskych zhrnutí z masívnych dátových sád.</li>
+                                    <li><strong>14:15 - 15:00 (Workshop):</strong> Žiaci obdržia poškodenú a neusporiadanú databázu fiktívnych predajov a s pomocou AI ju vyčistia, vypočítajú celkové zisky a pripravia grafický report.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Day 4 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>4. DEŇ: Princípy ovládania modelov a zvýšenie zamestnateľnosti</span>
+                                    <span class="text-emerald-400 text-xs">Rozsah: 6 hodín</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (Profesionálne CV na mieru):</strong> Analýza pracovného inzerátu pomocou Claude/ChatGPT. Príprava personalizovaného životopisu a motivačného listu, ktorý vyzdvihne zručnosti presne podľa požiadaviek zamestnávateľa.</li>
+                                    <li><strong>10:45 - 12:15 (Princípy a možnosti ovládania modelov):</strong> Výklad pokročilých techník ovládania modelov (systémové prompty, teplotné parametre výstupov, custom instructions a tvorba vlastných GPTs pomocou textových príkazov bez kódovania).</li>
+                                    <li><strong>12:45 - 14:50 (Prezentácie prác):</strong> Žiaci odprezentujú svoje finálne výstupy (očistený report, spísaný e-mail a prispôsobené životopisy) pred celou triedou. Lektor poskytuje konštruktívnu spätnú väzbu.</li>
+                                    <li><strong>14:50 - 15:00 (Záver a certifikáty):</strong> Slávnostné odovzdanie certifikátov o úspešnom absolvovaní akreditovanej rekvalifikácie pre Úrad práce (10 min).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 Metodika -->
+                    <div class="space-y-6">
+                        <h4 class="text-xl font-extrabold text-blue-400 border-b border-slate-800 pb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-video"></i>
+                            Kniha lektora: AI Tvorba, Gamma prezentácie a FlexClip video (24h)
+                        </h4>
+
+                        <div class="space-y-4 text-sm text-slate-300">
+                            <!-- Day 1 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>1. DEŇ: Plánovanie obsahu a marketingový copywriting</span>
+                                    <span class="text-blue-400 text-xs">Rozsah: 6 hodín</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (Analýza publika a tón hlasu):</strong> Ako definovať cieľovú skupinu pomocou ChatGPT a Claude. Nastavenie špecifických persón zákazníkov a definovanie tónu hlasu (Tone of Voice) pre marketingovú komunikáciu značky.</li>
+                                    <li><strong>10:45 - 12:15 (Písanie scenárov pre krátke videá):</strong> Štruktúra úspešného vertikálneho videa (Hook, Story, Offer). Generovanie pútavých scenárov pre produktové a promo videá na Reels, TikTok a YouTube Shorts.</li>
+                                    <li><strong>12:45 - 14:15 (Tvorba obsahového kalendára):</strong> Vytvorenie systematického plánu príspevkov na sociálne siete na 30 dní vopred za necelú polhodinu za asistencie modelov ChatGPT a Gemini.</li>
+                                    <li><strong>14:15 - 15:00 (Workshop):</strong> Praktické písanie. Každý žiak vytvorí tri odlišné typy scenárov pre rovnaký produkt (napr. kaviareň alebo e-shop) a otestuje rôzne marketingové "háčiky" (hooks).</li>
+                                </ul>
+                            </div>
+
+                            <!-- Day 2 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>2. DEŇ: Bleskové prezentácie a weby s Gamma App</span>
+                                    <span class="text-blue-400 text-xs">Rozsah: 6 hodín</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (Úvod do Gamma App):</strong> Zoznámenie sa s cloudovou aplikáciou Gamma. Registrácia, rozhranie, pochopenie princípu generovania obsahu z jedného textového príkazu.</li>
+                                    <li><strong>10:45 - 12:15 (Generovanie z textových podkladov):</strong> Pretransformovanie komplexného textového dokumentu alebo osnovy z ChatGPT na plnohodnotnú prezentáciu s vyváženým rozložením prvkov a dizajnom za 30 sekúnd.</li>
+                                    <li><strong>12:45 - 14:15 (Úprava dizajnu a štruktúry):</strong> Prispôsobovanie farieb, písiem, pridávanie interaktívnych prvkov, obrázkov generovaných AI priamo v rozhraní Gamma a export do PDF alebo PowerPointu.</li>
+                                    <li><strong>14:15 - 15:00 (Workshop):</strong> Každý žiak vygeneruje v Gamma App svoju vlastnú prezentáciu na tému „Prečo by ma mal zamestnávateľ prijať do práce“ s dĺžkou aspoň 6 snímok.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Day 3 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>3. DEŇ: Tvorba promovideí a produktových spotov vo FlexClip</span>
+                                    <span class="text-blue-500 text-xs font-semibold">Kľúčový marketingový blok</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (Predstavenie FlexClip):</strong> Nastavenie projektu, import vlastných videí, fotiek a audio súborov. Pochopenie časovej osi (Timeline) a vrstiev vo FlexClipe.</li>
+                                    <li><strong>10:45 - 12:15 (Promo a produktové videá pre sociálne siete):</strong> Tvorba reklamných spotov, produktových ukážok a videí predstavujúcich služby. Strih, kombinovanie bezplatných databázových videí s nahraným obsahom bez potreby drahého štúdiového vybavenia.</li>
+                                    <li><strong>12:45 - 14:15 (AI titulky, prechody a hudba):</strong> Automatické generovanie presných slovenských titulkov do videa pomocou umelej inteligencie FlexClip. Výber hudobného podmazu a pridávanie profesionálnych prechodov.</li>
+                                    <li><strong>14:15 - 15:00 (Workshop):</strong> Žiaci zostrihajú vlastné 30-sekundové promo video (napr. upútavku na kurz alebo fiktívnu službu) s titulkami, podmazom a exportujú ho vo vysokom rozlíšení.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Day 4 Detail -->
+                            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-3">
+                                <h5 class="font-bold text-white flex justify-between">
+                                    <span>4. DEŇ: Digitálne portfólio a záverečná prezentácia</span>
+                                    <span class="text-blue-400 text-xs">Rozsah: 6 hodín</span>
+                                </h5>
+                                <ul class="list-disc pl-5 space-y-2 text-xs text-slate-400">
+                                    <li><strong>09:00 - 10:30 (Tvorba portfólia v Gamma):</strong> Ako prezentovať svoje zručnosti digitálne. Žiaci si v Gamma App vytvoria jednoduchú, interaktívnu jednostránkovú mikrostránku (Portfolio), kam umiestnia odkaz na svoje vygenerované video z FlexClipu a ukážku scenárov.</li>
+                                    <li><strong>10:45 - 12:15 (Príprava na obhajobu pred ÚPSVaR):</strong> Ako sformulovať zhodnotenie prínosu kurzu pre úradníkov. Finalizácia všetkých praktických prác, kontrola technického exportu.</li>
+                                    <li><strong>12:45 - 14:50 (Prezentácie portfólií):</strong> Každý žiak premietne svoje vytvorené mikro-portfólio, pustí zostrihané promo video a obháji svoj marketingový koncept pred triedou a lektorom.</li>
+                                    <li><strong>14:50 - 15:00 (Slávnostný záver):</strong> Odovzdanie certifikátov o úspešnom absolvovaní rekvalifikačného kurzu pre Úrad práce (10 min).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lektor tipy -->
+                    <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl space-y-3">
+                        <h5 class="font-bold text-white text-base"><i class="fa-solid fa-lightbulb text-amber-400 mr-2"></i>Tipy lektora pre prácu s cieľovou skupinou z Úradu Práce:</h5>
+                        <ul class="list-disc pl-5 text-xs text-slate-400 space-y-1.5 leading-relaxed">
+                            <li><strong>Trpezlivosť na prvom mieste:</strong> Niektorí študenti môžu mať slabšie počítačové zručnosti. Postupujte pomaly a dajte dôraz na praktické klikanie, nielen teóriu.</li>
+                            <li><strong>Eliminácia strachu:</strong> Neustále pripomínajte, že AI je nástroj uľahčujúci prácu, nie strašiak, ktorý ich nahradí. Poukazujte na zvýšenie ich osobnej hodnoty pre zamestnávateľa.</li>
+                            <li><strong>Prísna dochádzka:</strong> Úrady práce prísne kontrolujú prezenčné listiny. Dajte si záležať, aby všetci študenti boli podpísaní a prihlásení včas podľa oficiálnej hodinovej štruktúry.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white">Najčastejšie otázky o preplácaní</h2>
+                <p class="text-slate-400 mt-2">Všetko, čo potrebujete vedieť o spolupráci s Úradom práce a Skillsy.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-slate-850 border border-slate-800 rounded-2xl p-6">
+                    <button onclick="toggleFaq(1)" class="w-full flex items-center justify-between text-left text-white font-bold text-lg focus:outline-none">
+                        <span>Reálne nebudem platiť vôbec nič? Ani euro?</span>
+                        <i id="faqIcon-1" class="fa-solid fa-chevron-down text-emerald-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAnswer-1" class="hidden mt-4 text-slate-300 text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Áno, naozaj nezaplatíte nič. V rámci národného projektu „Zručnosti pre trh práce“ prepláca Úrad práce celých 980 € ceny schváleného kurzu priamo vzdelávacej inštitúcii (nám). Vy nedoplácate žiadnu zálohu ani skrytý poplatok.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-slate-850 border border-slate-800 rounded-2xl p-6">
+                    <button onclick="toggleFaq(2)" class="w-full flex items-center justify-between text-left text-white font-bold text-lg focus:outline-none">
+                        <span>Čo ak mi úrad žiadosť neschváli? Budem musieť kurz doplatiť?</span>
+                        <i id="faqIcon-2" class="fa-solid fa-chevron-down text-emerald-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAnswer-2" class="hidden mt-4 text-slate-300 text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Rozhodne nie. Ak vám úrad žiadosť neschváli, nič sa nedeje. Vaša prihláška u nás sa jednoducho stornuje bez akýchkoľvek sankcií. Nemáte absolútne žiadne riziko.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-slate-850 border border-slate-800 rounded-2xl p-6">
+                    <button onclick="toggleFaq(3)" class="w-full flex items-center justify-between text-left text-white font-bold text-lg focus:outline-none">
+                        <span>Zvládnem to, aj keď som v AI úplný začiatočník a nie som "it-čkár"?</span>
+                        <i id="faqIcon-3" class="fa-solid fa-chevron-down text-emerald-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAnswer-3" class="hidden mt-4 text-slate-300 text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Naše kurzy sú dizajnované presne pre ľudí bez predchádzajúcich IT znalostí. Ak viete zapnúť počítač, otvoriť internetový prehliadač a napísať text, kurz bez problémov zvládnete. Všetky AI nástroje sa ovládajú ľudskou rečou (slovenčinou).
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-slate-850 border border-slate-800 rounded-2xl p-6">
+                    <button onclick="toggleFaq(4)" class="w-full flex items-center justify-between text-left text-white font-bold text-lg focus:outline-none">
+                        <span>Ako dlho trvá schvaľovanie žiadosti na úrade?</span>
+                        <i id="faqIcon-4" class="fa-solid fa-chevron-down text-emerald-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAnswer-4" class="hidden mt-4 text-slate-300 text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Štandardne trvá proces schvaľovania 14 až 21 dní od podania žiadosti. Preto je dôležité kontaktovať nás čo najskôr, aby sme stihli pripraviť podklady v dostatočnom predstihu pred spustením najbližšieho kurzu.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-850 py-12 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-slate-850 pb-8 items-center">
+                <div>
+                    <div class="flex items-center space-x-2 text-white font-bold mb-2">
+                        <i class="fa-solid fa-brain text-emerald-400"></i>
+                        <span>skillsy</span>
+                    </div>
+                    <p class="text-slate-400">Vzdelávanie pre lepšiu budúcnosť na slovenskom trhu práce.</p>
+                </div>
+                <div class="flex justify-center md:justify-start space-x-6 text-slate-400">
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-phone text-emerald-400"></i> +421 900 000 000</span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-envelope text-emerald-400"></i> info@skillsy.sk</span>
+                </div>
+                <div class="text-center md:text-right text-slate-400">
+                    <span>Ulica Vizionárov 42, 811 01 Bratislava</span>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <span>© 2026 Skillsy. Všetky práva vyhradené.</span>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-slate-300">Ochrana osobných údajov</a>
+                    <a href="#" class="hover:text-slate-300">Všeobecné obchodné podmienky</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching for Course Syllabus View
+        function switchSyllabus(course) {
+            const adminSyllabus = document.getElementById('syllabusAdmin');
+            const marketingSyllabus = document.getElementById('syllabusMarketing');
+            const tabBtnAdmin = document.getElementById('tabBtnAdmin');
+            const tabBtnMarketing = document.getElementById('tabBtnMarketing');
+
+            if (course === 'admin') {
+                adminSyllabus.classList.remove('hidden');
+                marketingSyllabus.classList.add('hidden');
+                tabBtnAdmin.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-emerald-500 text-slate-950";
+                tabBtnMarketing.className = "px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition";
+            } else {
+                adminSyllabus.classList.add('hidden');
+                marketingSyllabus.classList.remove('hidden');
+                tabBtnAdmin.className = "px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition";
+                tabBtnMarketing.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition bg-blue-500 text-white";
+            }
+        }
+
+        // Real-time Eligibility & Price Calculator
+        function calculateEligibility() {
+            const status = document.getElementById('statusSelect').value;
+            const reimbursementText = document.getElementById('reimbursementText');
+            const finalPrice = document.getElementById('finalPrice');
+            const eligibilityBadge = document.getElementById('eligibilityBadge');
+
+            if (status === 'uoz') {
+                reimbursementText.innerText = '- 980 €';
+                finalPrice.innerText = '0 €';
+                eligibilityBadge.className = "p-3 bg-emerald-500/10 border border-emerald-500/25 rounded-lg text-xs text-emerald-400 text-center font-medium";
+                eligibilityBadge.innerHTML = '<i class="fa-solid fa-circle-check mr-1.5"></i> Spĺňate podmienky projektu "Zručnosti pre trh práce"!';
+            } else if (status === 'zoz') {
+                reimbursementText.innerText = '- 980 €';
+                finalPrice.innerText = '0 €';
+                eligibilityBadge.className = "p-3 bg-emerald-500/10 border border-emerald-500/25 rounded-lg text-xs text-emerald-400 text-center font-medium";
+                eligibilityBadge.innerHTML = '<i class="fa-solid fa-circle-check mr-1.5"></i> Preplatenie je možné aj pre zamestnaných (hľadajúcich prácu)!';
+            } else {
+                reimbursementText.innerText = '- 0 €';
+                finalPrice.innerText = '980 €';
+                eligibilityBadge.className = "p-3 bg-amber-500/10 border border-amber-500/25 rounded-lg text-xs text-amber-400 text-center font-medium";
+                eligibilityBadge.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-1.5"></i> Ako samoplatca zaplatíte plnú cenu kurzu.';
+            }
+        }
+
+        // Toggle FAQ Answers
+        function toggleFaq(id) {
+            const answer = document.getElementById(`faqAnswer-${id}`);
+            const icon = document.getElementById(`faqIcon-${id}`);
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Select specific course from pricing/cards and pre-fill form
+        function selectCourseAndScroll(courseKey) {
+            const formSelect = document.getElementById('formCourse');
+            formSelect.value = courseKey;
+            
+            // Sync with calculator
+            const courseSelect = document.getElementById('courseSelect');
+            courseSelect.value = courseKey;
+            calculateEligibility();
+
+            scrollToForm();
+        }
+
+        // Navigation helpers
+        function scrollToForm() {
+            document.getElementById('ziadost-form').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Handle lead generation submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('successOverlay').classList.remove('hidden');
+        }
+
+        function resetForm() {
+            document.getElementById('leadForm').reset();
+            document.getElementById('successOverlay').classList.add('hidden');
+        }
+
+        // Password verification for the Lecturer Zone
+        function verifyPassword() {
+            const passwordInput = document.getElementById('lecturerPassword').value;
+            const errorMsg = document.getElementById('wrongPassMsg');
+            const loginArea = document.getElementById('lecturerLogin');
+            const contentArea = document.getElementById('lecturerContent');
+
+            if (passwordInput === '0000') {
+                errorMsg.classList.add('hidden');
+                loginArea.classList.add('hidden');
+                contentArea.classList.remove('hidden');
+            } else {
+                errorMsg.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
